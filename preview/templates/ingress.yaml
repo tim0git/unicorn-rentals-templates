@@ -19,7 +19,7 @@ spec:
         path: "/"
         backend:
           service:
-            name: unicorn-rentals-mfe
+            name: {{ .Values.name }}-service
             port:
               number: 80
   tls:
